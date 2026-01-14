@@ -48,4 +48,8 @@
     .heroSection__text__mobileDisplay p {
         margin-bottom: 1rem;
     }
+
+    .drawerToggle.mobileDisplay {
+        display: block;
+    }
 }

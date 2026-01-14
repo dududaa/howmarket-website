@@ -52,6 +52,10 @@ section {
     display: none;
 }
 
+.drawerToggle.mobileDisplay {
+    display: none;
+}
+
 .appNavigation .appBrand {
     display: inline-flex;
     align-items: center;

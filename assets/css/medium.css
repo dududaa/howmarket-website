@@ -6,4 +6,8 @@
     .heroSection__content .drawerToggle {
         display: block;
     }
+
+    .drawerToggle.mobileDisplay {
+        display: none;
+    }
 }
