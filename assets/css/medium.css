@@ -1,0 +1,9 @@
+@media (max-width: 64rem) {
+    .heroSection__content .appNavigation {
+        display: none;
+    }
+
+    .heroSection__content .drawerToggle {
+        display: block;
+    }
+}
