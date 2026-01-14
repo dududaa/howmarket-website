@@ -37,7 +37,7 @@ section {
     column-gap: 6rem;
 }
 
-.heroSection__content {
+.heroSection .heroSection__content {
     flex: 1;
 }
 
@@ -109,6 +109,14 @@ section {
 
 .heroSection__showcase img {
     height: 33rem;
+}
+
+.heroSection__showcase .heroSection__showcase__titleBox {
+    display: none;
+}
+
+.heroSection .heroSection__text__mobileDisplay {
+    display: none;
 }
 
 .btn {
