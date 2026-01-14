@@ -49,6 +49,17 @@
         margin-bottom: 1rem;
     }
 
+    .heroSection__text__mobileDisplay .actionText {
+        text-align: center;
+    }
+
+    .heroSection__text__mobileDisplay .heroSection__actions {
+        width: 100%;
+        display: inline-flex;
+        column-gap: 12px;
+        justify-content: center;
+    }
+
     .drawerToggle.mobileDisplay {
         display: block;
     }

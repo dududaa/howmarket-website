@@ -1,0 +1,37 @@
+.btn {
+    border: none;
+    outline: none;
+    height: 44px;
+    width: 150px;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+.rounded {
+    border-radius: 999px;
+}
+
+.pryBtn {
+    background-color: var(--primary-color);
+    color: white;
+    transition: all .2s;
+}
+
+.pryBtn:hover {
+    background-color: white;
+    color: var(--primary-color);
+    border: var(--primary-color) solid 1px;
+}
+
+.outlineBtn {
+    background-color: white;
+    color: var(--primary-color);
+    border: var(--primary-color) solid 1px;
+    transition: all .2s;
+}
+
+.outlineBtn:hover {
+    background-color: var(--primary-color);
+    color: white;
+    border: none;
+}
