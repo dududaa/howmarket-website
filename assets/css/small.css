@@ -1,5 +1,10 @@
 @media (max-width: 30rem) {
-    main {
+    section {
+        padding-left: .8rem;
+        padding-right: .8rem;
+    }
+
+    section.appSection {
         padding-left: .8rem;
         padding-right: .8rem;
     }
@@ -62,5 +67,14 @@
 
     .drawerToggle.mobileDisplay {
         display: block;
+    }
+
+    .features .featureList {
+        flex-direction: column;
+    }
+
+    .features .featureList .featureItem {
+        width: 100%;
+        box-sizing: border-box;
     }
 }
