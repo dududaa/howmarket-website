@@ -19,4 +19,8 @@
         width: 80%;
         padding: 2rem;
     }
+
+    #drawer .drawerContent .appBrand {
+        margin-bottom: 24px;
+    }
 }
