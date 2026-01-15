@@ -9,6 +9,11 @@
         padding-right: .8rem;
     }
 
+    section.appSection .sectionTitle {
+        font-size: 3rem;
+        line-height: 1;
+    }
+
     .heroSection {
         flex-wrap: wrap;
     }
@@ -59,7 +64,7 @@
         text-align: center;
     }
 
-    .heroSection__text__mobileDisplay .heroSection__actions {
+    .heroSection__text__mobileDisplay .sectionActions {
         width: 100%;
         display: inline-flex;
         column-gap: 12px;
