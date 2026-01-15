@@ -4,6 +4,7 @@
     --primary-color: #206A4E;
     --primary-bright: #8DD5B2;
     --font-color: #232c28;
+    --surface-color: #f2f2f2;
     --logo-size: 70px;
     --hero-showcase-border-radius: 30px;
 }
@@ -51,7 +52,7 @@ section.appSection {
 }
 
 .appSection.darkSection {
-    background-color: #f2f2f2;
+    background-color: var(--surface-color);
 }
 
 section.appSection .sectionTitle {

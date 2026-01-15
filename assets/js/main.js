@@ -28,23 +28,49 @@ if (form) {
     form.addEventListener('submit', async (e) => {
         e.preventDefault()
 
-        const name = getInputValue('user-name')
-        const contact = getInputValue('user-contact')
-        const reason = getInputValue('user-reason')
-        const message = getInputValue('user-message')
+        try {
+            const name = getInputValue('user-name')
+            const contact = getInputValue('user-contact')
+            const reason = getInputValue('user-reason')
+            const message = getInputValue('user-message')
 
-        const data = { name, contact, reason, message }
-        console.log(data)
-        const { error } = await client
-            .from('contact_messages')
-            .insert([data]);
+            const data = { name, contact, reason, message }
+            const { error } = await client
+                .from('contact_messages')
+                .insert([data]);
 
-        if (error) {
-            console.log(error)
+            if (error) throw new Error(error.message)
+            else showToast('success', 'Message sent successfully!')
+        } catch (e) {
+            showToast('error', e.message)
         }
+
     })
 }
 
 const getInputValue = (inputId) => {
     return document.getElementById(inputId).value
 }
+
+
+// toast
+const showToast = (type, msg) => {
+    const scrollPos = window.scrollY;
+    const viewportHeight = window.innerHeight;
+
+    const toast = document.getElementById("toast")
+    if (toast) {
+        toast.classList.add(type)
+        toast.style.top = ((scrollPos + viewportHeight) - 80) + 'px'
+        toast.style.display = 'block'
+
+        const tax = document.getElementById("toastTextContent")
+        if (tax) tax.innerText = msg
+    }
+}
+
+const hideToast = document.getElementById('toastClose')
+hideToast.addEventListener('click', () => {
+    const toast = document.getElementById("toast")
+    toast.style.display = 'none'
+})

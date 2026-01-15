@@ -111,3 +111,32 @@ textarea {
     padding: .5rem 1rem;
     border-bottom: 1px solid #232c284b;
 }
+
+#toast {
+    display: none;
+    position: absolute;
+    width: 100%;
+    left: 0;
+}
+
+#toast .toastContent {
+    background: var(--primary-color);
+    padding: 1rem 0.75rem;
+    width: 90%;
+    margin: auto;
+    border-radius: 8px;
+    color: white;
+    box-sizing: border-box;
+}
+
+#toast.error .toastContent {
+    background: red;
+}
+
+#toast .toastContent .toastContent__inner {
+    width: 100%;
+    display: inline-flex;
+    align-items: center;
+    justify-content: space-between;
+    column-gap: 8px;
+}
