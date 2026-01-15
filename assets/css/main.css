@@ -9,11 +9,14 @@
     --hero-showcase-border-radius: 30px;
 }
 
+html {
+    scroll-behavior: smooth;
+}
+
 body {
     font-family: "Inter", sans-serif;
     color: var(--font-color);
     margin: 0;
-    scroll-behavior: smooth;
 }
 
 main {

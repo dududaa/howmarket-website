@@ -41,6 +41,8 @@ if (form) {
 
             if (error) throw new Error(error.message)
             else showToast('success', 'Message sent successfully!')
+        
+            form.reset()
         } catch (e) {
             showToast('error', e.message)
         }
@@ -61,12 +63,11 @@ const hideToast = () => {
 
 const showToast = (type, msg) => {
     const scrollPos = window.scrollY;
-    const viewportHeight = window.innerHeight;
 
     const toast = document.getElementById("toast")
     if (toast) {
         toast.classList.add(type)
-        toast.style.top = ((scrollPos + viewportHeight) - 80) + 'px'
+        toast.style.top = (scrollPos + 18) + 'px'
         toast.style.display = 'block'
 
         const tax = document.getElementById("toastTextContent")
