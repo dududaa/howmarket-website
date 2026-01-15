@@ -35,3 +35,24 @@
     color: white;
     border: none;
 }
+
+input, textarea, select {
+    width: 100%;
+    margin-bottom: 1rem;
+    padding: 0 12px;
+    box-sizing: border-box;
+    outline: none;
+}
+
+input, select {
+    height: 2.2rem;
+}
+
+input:focus, select:focus, textarea:focus {
+    outline: none;
+    border: 1px solid var(--primary-color);
+}
+
+textarea {
+    height: 8rem;
+}

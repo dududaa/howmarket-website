@@ -83,4 +83,11 @@
         width: 100%;
         box-sizing: border-box;
     }
+
+    #contact .formContainer {
+        width: 100%;
+        box-sizing: border-box;
+        padding-left: 1rem;
+        padding-right: 1rem;
+    }
 }

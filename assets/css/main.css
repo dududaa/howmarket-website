@@ -9,6 +9,7 @@
 }
 
 body {
+    font-family: "Inter", sans-serif;
     color: #232c28;
 }
 
@@ -19,7 +20,12 @@ main {
     padding-top: .75rem;
 }
 
-h1, h2, h3, h4, h5, h6 {
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
     font-family: "Poppins", sans-serif;
     margin: 0;
     line-height: 1.2;
@@ -27,8 +33,7 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 p {
-  font-family: "Inter", sans-serif;
-  margin: 0;
+    margin: 0;
 }
 
 section {
@@ -128,8 +133,7 @@ section.appSection .sectionSubtitle {
 .heroSection .heroSection__showcase {
     height: 34rem;
     width: 40%;
-    background: linear-gradient(
-319deg, var(--primary-color)30%, var(--primary-bright));
+    background: linear-gradient(319deg, var(--primary-color)30%, var(--primary-bright));
     border-radius: var(--hero-showcase-border-radius);
     border-bottom-right-radius: calc(var(--hero-showcase-border-radius) * 5);
     display: inline-flex;
@@ -192,4 +196,13 @@ section.appSection .sectionSubtitle {
 
 #partnership .sectionSubtitle {
     margin-bottom: 1rem;
+}
+
+#contact .formContainer {
+    width: 60%;
+    margin: auto;
+    background-color: white;
+    padding: 2rem;
+    border: 8px;
+    box-shadow: rgba(50, 50, 93, 0.25) 0px 6px 12px -2px, rgba(0, 0, 0, 0.3) 0px 3px 7px -3px;
 }
