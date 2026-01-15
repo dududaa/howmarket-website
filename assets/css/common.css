@@ -1,3 +1,28 @@
+.appBrand {
+    display: inline-flex;
+    align-items: center;
+    cursor: pointer;
+}
+
+.appBrand img {
+    width: var(--logo-size);
+    height: var(--logo-size);
+}
+
+.appBrand .appName {
+    font-weight: 500;
+    font-size: 1.25rem;
+}
+
+.navLink {
+    font-weight: normal;
+    cursor: pointer;
+    margin-top: 3.5px;
+    text-decoration: none;
+    color: var(--font-color);
+    font-size: 1.25rem;
+}
+
 .btn {
     border: none;
     outline: none;
@@ -36,7 +61,9 @@
     border: none;
 }
 
-input, textarea, select {
+input,
+textarea,
+select {
     width: 100%;
     margin-bottom: 1rem;
     padding: 0 12px;
@@ -44,11 +71,14 @@ input, textarea, select {
     outline: none;
 }
 
-input, select {
+input,
+select {
     height: 2.2rem;
 }
 
-input:focus, select:focus, textarea:focus {
+input:focus,
+select:focus,
+textarea:focus {
     outline: none;
     border: 1px solid var(--primary-color);
 }
@@ -56,4 +86,28 @@ input:focus, select:focus, textarea:focus {
 textarea {
     height: 8rem;
     padding: 12px;
+}
+
+#drawer {
+    position: absolute;
+    height: 100vh;
+    width: 100%;
+    background: rgba(0, 0, 0, 0.226);
+    top: 0;
+    left: 0;
+    display: none;
+}
+
+#drawer .drawerContent {
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+    width: 50%;
+    background-color: white;
+    box-shadow: rgba(0, 0, 0, 0.16) 0px 3px 6px, rgba(0, 0, 0, 0.23) 0px 3px 6px;
+}
+
+.drawerContent .navLink{
+    padding: .5rem 1rem;
+    border-bottom: 1px solid #232c284b;
 }

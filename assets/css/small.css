@@ -92,9 +92,13 @@
         padding-right: 1rem;
     }
 
-footer p {
-    width: 80%;
-    margin: auto;
-    font-size: .75rem;
-}
+    footer p {
+        width: 80%;
+        margin: auto;
+        font-size: .75rem;
+    }
+
+    #drawer .drawerContent {
+        width: 70%;
+    }
 }
