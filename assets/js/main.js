@@ -4,8 +4,14 @@ for (let i = 0; i < drawerTogglers.length; i++) {
     if (toggler) {
         toggler.addEventListener('click', () => {
             const drawer = document.getElementById('drawer')
-            drawer.style.display = 'block'
+            if(drawer) drawer.style.display = 'block'
         })
     }
 }
 
+const drawer = document.getElementById('drawer')
+if(drawer){
+    drawer.addEventListener('click', () => {
+        drawer.style.display = 'none'
+    })
+}
