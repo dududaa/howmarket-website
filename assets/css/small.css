@@ -53,7 +53,6 @@
         padding: 1.4rem 1rem;
         box-shadow: rgba(50, 50, 93, 0.25) 0px 13px 27px -5px, rgba(0, 0, 0, 0.3) 0px 8px 16px -8px;
         margin-top: -4rem;
-        margin-left: -0.3rem;
     }
 
     .heroSection__text__mobileDisplay p {
@@ -62,6 +61,7 @@
 
     .heroSection__text__mobileDisplay .actionText {
         text-align: center;
+        margin-bottom: 0;
     }
 
     .heroSection__text__mobileDisplay .sectionActions {
@@ -69,6 +69,7 @@
         display: inline-flex;
         column-gap: 12px;
         justify-content: center;
+        margin-top: 0.5rem;
     }
 
     .drawerToggle.mobileDisplay {

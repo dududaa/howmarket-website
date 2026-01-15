@@ -55,4 +55,5 @@ input:focus, select:focus, textarea:focus {
 
 textarea {
     height: 8rem;
+    padding: 12px;
 }
