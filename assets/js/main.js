@@ -54,6 +54,11 @@ const getInputValue = (inputId) => {
 
 
 // toast
+const hideToast = () => {
+    const toast = document.getElementById("toast")
+    toast.style.display = 'none'
+}
+
 const showToast = (type, msg) => {
     const scrollPos = window.scrollY;
     const viewportHeight = window.innerHeight;
@@ -66,11 +71,10 @@ const showToast = (type, msg) => {
 
         const tax = document.getElementById("toastTextContent")
         if (tax) tax.innerText = msg
+
+        setTimeout(hideToast, 5000)
     }
 }
 
-const hideToast = document.getElementById('toastClose')
-hideToast.addEventListener('click', () => {
-    const toast = document.getElementById("toast")
-    toast.style.display = 'none'
-})
+const hoastCancel = document.getElementById('toastClose')
+hoastCancel.addEventListener('click', hideToast)

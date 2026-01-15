@@ -107,7 +107,7 @@ textarea {
     box-shadow: rgba(0, 0, 0, 0.16) 0px 3px 6px, rgba(0, 0, 0, 0.23) 0px 3px 6px;
 }
 
-.drawerContent .navLink{
+.drawerContent .navLink {
     padding: .5rem 1rem;
     border-bottom: 1px solid #232c284b;
 }
@@ -127,6 +127,7 @@ textarea {
     border-radius: 8px;
     color: white;
     box-sizing: border-box;
+    max-width: 480px;
 }
 
 #toast.error .toastContent {
