@@ -8,6 +8,7 @@
     --logo-size: 70px;
     --hero-showcase-border-radius: 30px;
     --body-padding: 1.5rem;
+    --app-width: 1400px;
 }
 
 html {
@@ -21,7 +22,7 @@ body {
 }
 
 main {
-    max-width: 1400px;
+    max-width: var(--app-width);
     margin: auto;
     line-height: 1.2;
     padding-top: .75rem;

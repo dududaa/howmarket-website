@@ -7,15 +7,23 @@
     cursor: pointer;
 }
 
+.navigationContainer {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+
 .appNavigation {
     display: inline-flex;
     width: 100%;
     align-items: center;
     column-gap: 1rem;
+    margin: auto;
+    max-width: var(--app-width);
 }
 
 .headerMobile,
-.appNavigation {
+.navigationContainer {
     position: fixed;
     left: 0;
     top: 0;
