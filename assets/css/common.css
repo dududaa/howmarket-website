@@ -45,6 +45,24 @@
     height: calc(var(--logo-size) - 8px);
 }
 
+.socials {
+    margin-left: auto;
+    display: inline-flex;
+    align-items: center;
+    margin-right: var(--body-padding);
+    column-gap: 1rem;
+    opacity: 0;
+    transition: opacity .3s;
+}
+
+.socials svg {
+    width: 24px;
+}
+
+.appNavigation.scrolled .socials {
+    opacity: 1;
+}
+
 .appBrand .appName {
     font-weight: 500;
     font-size: 1.25rem;

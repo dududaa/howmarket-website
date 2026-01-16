@@ -1,6 +1,8 @@
 // watch window scroll
 const headers = document.querySelectorAll(".headerMobile, .appNavigation")
-window.addEventListener('scroll', () => {
+window.addEventListener('scroll', () => overlayHeaders())
+
+const overlayHeaders = () => {
     const scrollY = window.scrollY
     for (let i = 0; i < headers.length; i++) {
         const item = headers.item(i)
@@ -9,7 +11,9 @@ window.addEventListener('scroll', () => {
             else item.classList.remove('scrolled')
         }
     }
-})
+}
+
+overlayHeaders()
 
 // show drawer
 const drawerTogglers = document.getElementsByClassName("drawerToggle")
