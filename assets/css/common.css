@@ -1,5 +1,6 @@
 .headerMobile {
-    padding: 12px var(--body-padding) 0 var(--body-padding);
+    padding: 12px var(--body-padding);
+    width: 100%;
 }
 
 .drawerToggle {
@@ -18,6 +19,13 @@
     position: fixed;
     left: 0;
     top: 0;
+    transition: all .3s;
+}
+
+.headerMobile.scrolled,
+.appNavigation.scrolled {
+    background-color: white;
+    box-shadow: rgba(50, 50, 93, 0.25) 0px 2px 5px -1px, rgba(0, 0, 0, 0.3) 0px 1px 3px -1px;
 }
 
 .appBrand {
@@ -29,6 +37,12 @@
 .appBrand img {
     width: var(--logo-size);
     height: var(--logo-size);
+    transition: all .3s;
+}
+
+.appNavigation.scrolled .appBrand img {
+    width: calc(var(--logo-size) - 8px);
+    height: calc(var(--logo-size) - 8px);
 }
 
 .appBrand .appName {

@@ -1,3 +1,16 @@
+// watch window scroll
+const headers = document.querySelectorAll(".headerMobile, .appNavigation")
+window.addEventListener('scroll', () => {
+    const scrollY = window.scrollY
+    for (let i = 0; i < headers.length; i++) {
+        const item = headers.item(i)
+        if (item) {
+            if (scrollY >= 38) item.classList.add('scrolled')
+            else item.classList.remove('scrolled')
+        }
+    }
+})
+
 // show drawer
 const drawerTogglers = document.getElementsByClassName("drawerToggle")
 for (let i = 0; i < drawerTogglers.length; i++) {
