@@ -26,6 +26,8 @@ for (let i = 0; i < drawerTogglers.length; i++) {
                 const scrollPos = window.scrollY;
                 drawer.style.top = scrollPos + 'px'
                 drawer.style.display = 'block'
+
+                document.body.style.overflowY = 'hidden'
             }
         })
     }
@@ -36,6 +38,7 @@ const drawer = document.getElementById('drawer')
 if (drawer) {
     drawer.addEventListener('click', () => {
         drawer.style.display = 'none'
+        document.body.style.overflowY = 'auto'
     })
 }
 
@@ -91,8 +94,8 @@ const showToast = (type, msg) => {
         toast.style.top = (scrollPos + 18) + 'px'
         toast.style.display = 'block'
 
-        const tax = document.getElementById("toastTextContent")
-        if (tax) tax.innerText = msg
+        const toastText = document.getElementById("toastTextContent")
+        if (toastText) toastText.innerText = msg
 
         setTimeout(hideToast, 5000)
     }
