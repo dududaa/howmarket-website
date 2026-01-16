@@ -1,14 +1,10 @@
 @media (max-width: 64rem) {
-    .heroSection__content .appNavigation {
+    .appNavigation {
         display: none;
     }
 
-    .heroSection__content .drawerToggle {
+    .headerMobile {
         display: block;
-    }
-
-    .drawerToggle.mobileDisplay {
-        display: none;
     }
 
     .features .featureList .featureItem {

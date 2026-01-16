@@ -7,6 +7,7 @@
     --surface-color: #f2f2f2;
     --logo-size: 70px;
     --hero-showcase-border-radius: 30px;
+    --body-padding: 1.5rem;
 }
 
 html {
@@ -45,12 +46,12 @@ p {
 
 section {
     width: 100%;
-    padding: 0 1.5rem;
+    padding: 0 var(--body-padding);
     box-sizing: border-box;
 }
 
 section.appSection {
-    padding: 3rem 1.5rem;
+    padding: 3rem var(--body-padding);
     margin: 2rem 0;
 }
 
@@ -80,29 +81,19 @@ section.appSection .sectionSubtitle {
 .heroSection {
     display: flex;
     column-gap: 6rem;
+    padding-top: 2rem;
 }
 
 .heroSection .heroSection__content {
     flex: 1;
 }
 
-.heroSection__content .appNavigation {
-    display: inline-flex;
-    width: 100%;
-    align-items: center;
-    column-gap: 1rem;
-}
-
-.heroSection__content .drawerToggle {
-    display: none;
-}
-
-.drawerToggle.mobileDisplay {
+.headerMobile {
     display: none;
 }
 
 .heroSection__content .heroSection__textContent {
-    padding-top: 5rem;
+    padding-top: 8rem;
 }
 
 .heroSection__textContent .heroSection__title {

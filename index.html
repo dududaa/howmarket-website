@@ -36,8 +36,8 @@
 
 <body>
     <main>
-        <section class="heroSection" id="home">
-            <div class="drawerToggle mobileDisplay">
+        <header class="headerMobile">
+            <div class="drawerToggle">
                 <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none"
                     stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"
                     class="icon icon-tabler icons-tabler-outline icon-tabler-menu-2">
@@ -47,28 +47,20 @@
                     <path d="M4 18l16 0" />
                 </svg>
             </div>
-            <div class="heroSection__content">
-                <div class="drawerToggle">
-                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none"
-                        stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"
-                        class="icon icon-tabler icons-tabler-outline icon-tabler-menu-2">
-                        <path stroke="none" d="M0 0h24v24H0z" fill="none" />
-                        <path d="M4 6l16 0" />
-                        <path d="M4 12l16 0" />
-                        <path d="M4 18l16 0" />
-                    </svg>
+        </header>
+        <header class="appNavigation">
+            <a href="#">
+                <div class="appBrand">
+                    <img class="appLogo" src="assets/images/app_logo.png" />
+                    <h3 class="appName">HowMarket</h3>
                 </div>
-                <header class="appNavigation">
-                    <a href="#">
-                        <div class="appBrand">
-                            <img class="appLogo" src="assets/images/app_logo.png" />
-                            <h3 class="appName">HowMarket</h3>
-                        </div>
-                    </a>
-                    <a href="#features" class="navLink">Features</a>
-                    <a href="#partnership" class="navLink">Partnership</a>
-                    <a href="#contact" class="navLink">Contact</a>
-                </header>
+            </a>
+            <a href="#features" class="navLink">Features</a>
+            <a href="#partnership" class="navLink">Partnership</a>
+            <a href="#contact" class="navLink">Contact</a>
+        </header>
+        <section class="heroSection" id="home">
+            <div class="heroSection__content">
                 <div class="heroSection__textContent">
                     <h1 class="heroSection__title">
                         HowMarket Today?👋

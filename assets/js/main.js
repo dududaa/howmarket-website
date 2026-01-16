@@ -5,7 +5,11 @@ for (let i = 0; i < drawerTogglers.length; i++) {
     if (toggler) {
         toggler.addEventListener('click', () => {
             const drawer = document.getElementById('drawer')
-            if (drawer) drawer.style.display = 'block'
+            if (drawer) {
+                const scrollPos = window.scrollY;
+                drawer.style.top = scrollPos + 'px'
+                drawer.style.display = 'block'
+            }
         })
     }
 }
@@ -41,7 +45,7 @@ if (form) {
 
             if (error) throw new Error(error.message)
             else showToast('success', 'Message sent successfully!')
-        
+
             form.reset()
         } catch (e) {
             showToast('error', e.message)

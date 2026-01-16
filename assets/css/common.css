@@ -1,3 +1,25 @@
+.headerMobile {
+    padding: 12px var(--body-padding) 0 var(--body-padding);
+}
+
+.drawerToggle {
+    cursor: pointer;
+}
+
+.appNavigation {
+    display: inline-flex;
+    width: 100%;
+    align-items: center;
+    column-gap: 1rem;
+}
+
+.headerMobile,
+.appNavigation {
+    position: fixed;
+    left: 0;
+    top: 0;
+}
+
 .appBrand {
     display: inline-flex;
     align-items: center;
