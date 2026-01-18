@@ -1,73 +1,335 @@
 <!DOCTYPE html>
 <html lang="en">
-    <head>
-        <meta charset="UTF-8" />
-        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
-        <title>HowMarket — Free Cross-platform Point of Sale (PoS) Software for Growing Businesses.</title>
-        <meta name="description"
-            content="HowMarket is an offline-first POS that helps small businesses track sales, manage inventory, and grow — even without internet." />
+<head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
-        <link rel="icon" href="favicon.ico" type="image/x-icon" />
+    <title>HowMarket — Free Cross-platform Point of Sale (PoS) Software for Growing Businesses.</title>
+    <meta name="description"
+        content="HowMarket is an offline-first POS that helps small businesses track sales, manage inventory, and grow — even without internet." />
 
-        <meta property="og:title" content="HowMarket — Free Multiplatform Point of Sale (PoS) Software" />
-        <meta property="og:description" content="Sell smarter. Anywhere. Anytime." />
-        <meta property="og:image" content="https://howmarket.dududaa.org/assets/images/howmarket.png" />
-        <meta property="og:url" content="https://howmarket.dududaa.org" />
-        <meta property="og:type" content="website" />
+    <link rel="icon" href="favicon.ico" type="image/x-icon" />
 
-        <meta name="twitter:card" content="summary_large_image" />
-        <meta name="twitter:title" content="HowMarket — Free Multiplatform Point of Sale (PoS) Software" />
-        <meta name="twitter:description" content="Sell like a pro. Scale as you grow." />
-        <meta name="twitter:image" content="https://howmarket.dududaa.org/assets/images/howmarket.png" />
+    <meta property="og:title" content="HowMarket — Free Multiplatform Point of Sale (PoS) Software" />
+    <meta property="og:description" content="Sell smarter. Anywhere. Anytime." />
+    <meta property="og:image" content="https://howmarket.dududaa.org/assets/images/howmarket.png" />
+    <meta property="og:url" content="https://howmarket.dududaa.org" />
+    <meta property="og:type" content="website" />
 
-        <link rel="preconnect" href="https://fonts.googleapis.com" />
-        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-        <link
-            href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
-            rel="stylesheet">
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta name="twitter:title" content="HowMarket — Free Multiplatform Point of Sale (PoS) Software" />
+    <meta name="twitter:description" content="Sell like a pro. Scale as you grow." />
+    <meta name="twitter:image" content="https://howmarket.dududaa.org/assets/images/howmarket.png" />
 
-        <link rel="stylesheet" href="assets/css/main.css" />
-        <link rel="stylesheet" href="assets/css/medium.css" />
-        <link rel="stylesheet" href="assets/css/small.css" />
-    </head>
-    
-    <!-- Google tag (gtag.js) -->
-    <script async src="https://www.googletagmanager.com/gtag/js?id=G-283H8XC4XE"></script>
-    <script>
-        window.dataLayer = window.dataLayer || [];
-        function gtag() { dataLayer.push(arguments); }
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+        href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+        rel="stylesheet">
 
-        gtag('js', new Date());
-        gtag('config', 'G-283H8XC4XE');
-    </script>
+    <link rel="stylesheet" href="assets/css/main.css" />
+    <link rel="stylesheet" href="assets/css/medium.css" />
+    <link rel="stylesheet" href="assets/css/small.css" />
+</head>
 
-    <body>
-        <main>
-            <header class="headerMobile">
-                <div class="drawerToggle">
-                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none"
-                        stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"
-                        class="icon icon-tabler icons-tabler-outline icon-tabler-menu-2">
-                        <path stroke="none" d="M0 0h24v24H0z" fill="none" />
-                        <path d="M4 6l16 0" />
-                        <path d="M4 12l16 0" />
-                        <path d="M4 18l16 0" />
-                    </svg>
+<!-- Google tag (gtag.js) -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-283H8XC4XE"></script>
+<script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag() { dataLayer.push(arguments); }
+
+    gtag('js', new Date());
+    gtag('config', 'G-283H8XC4XE');
+</script>
+
+<body>
+    <main>
+        <header class="headerMobile">
+            <div class="drawerToggle">
+                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none"
+                    stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"
+                    class="icon icon-tabler icons-tabler-outline icon-tabler-menu-2">
+                    <path stroke="none" d="M0 0h24v24H0z" fill="none" />
+                    <path d="M4 6l16 0" />
+                    <path d="M4 12l16 0" />
+                    <path d="M4 18l16 0" />
+                </svg>
+            </div>
+        </header>
+        <div class="navigationContainer">
+            <header class="appNavigation">
+                <a href="#">
+                    <div class="appBrand">
+                        <img class="appLogo" src="assets/images/app_logo.png" />
+                        <h3 class="appName">HowMarket</h3>
+                    </div>
+                </a>
+                <a href="#features" class="navLink">Features</a>
+                <a href="#partnership" class="navLink">Partnership</a>
+                <a href="#contact" class="navLink">Contact</a>
+                <div class="socials">
+                    <a href="https://github.com/dududaa/howmarket" target="_blank">
+                        <svg role="img" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                            <title>GitHub</title>
+                            <path
+                                d="M12 .297c-6.63 0-12 5.373-12 12 0 5.303 3.438 9.8 8.205 11.385.6.113.82-.258.82-.577 0-.285-.01-1.04-.015-2.04-3.338.724-4.042-1.61-4.042-1.61C4.422 18.07 3.633 17.7 3.633 17.7c-1.087-.744.084-.729.084-.729 1.205.084 1.838 1.236 1.838 1.236 1.07 1.835 2.809 1.305 3.495.998.108-.776.417-1.305.76-1.605-2.665-.3-5.466-1.332-5.466-5.93 0-1.31.465-2.38 1.235-3.22-.135-.303-.54-1.523.105-3.176 0 0 1.005-.322 3.3 1.23.96-.267 1.98-.399 3-.405 1.02.006 2.04.138 3 .405 2.28-1.552 3.285-1.23 3.285-1.23.645 1.653.24 2.873.12 3.176.765.84 1.23 1.91 1.23 3.22 0 4.61-2.805 5.625-5.475 5.92.42.36.81 1.096.81 2.22 0 1.606-.015 2.896-.015 3.286 0 .315.21.69.825.57C20.565 22.092 24 17.592 24 12.297c0-6.627-5.373-12-12-12" />
+                        </svg>
+                    </a>
+                    <a href="https://discord.gg/qHkWvAPsDw" target="_blank">
+                        <svg role="img" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                            <title>Discord</title>
+                            <path
+                                d="M20.317 4.3698a19.7913 19.7913 0 00-4.8851-1.5152.0741.0741 0 00-.0785.0371c-.211.3753-.4447.8648-.6083 1.2495-1.8447-.2762-3.68-.2762-5.4868 0-.1636-.3933-.4058-.8742-.6177-1.2495a.077.077 0 00-.0785-.037 19.7363 19.7363 0 00-4.8852 1.515.0699.0699 0 00-.0321.0277C.5334 9.0458-.319 13.5799.0992 18.0578a.0824.0824 0 00.0312.0561c2.0528 1.5076 4.0413 2.4228 5.9929 3.0294a.0777.0777 0 00.0842-.0276c.4616-.6304.8731-1.2952 1.226-1.9942a.076.076 0 00-.0416-.1057c-.6528-.2476-1.2743-.5495-1.8722-.8923a.077.077 0 01-.0076-.1277c.1258-.0943.2517-.1923.3718-.2914a.0743.0743 0 01.0776-.0105c3.9278 1.7933 8.18 1.7933 12.0614 0a.0739.0739 0 01.0785.0095c.1202.099.246.1981.3728.2924a.077.077 0 01-.0066.1276 12.2986 12.2986 0 01-1.873.8914.0766.0766 0 00-.0407.1067c.3604.698.7719 1.3628 1.225 1.9932a.076.076 0 00.0842.0286c1.961-.6067 3.9495-1.5219 6.0023-3.0294a.077.077 0 00.0313-.0552c.5004-5.177-.8382-9.6739-3.5485-13.6604a.061.061 0 00-.0312-.0286zM8.02 15.3312c-1.1825 0-2.1569-1.0857-2.1569-2.419 0-1.3332.9555-2.4189 2.157-2.4189 1.2108 0 2.1757 1.0952 2.1568 2.419 0 1.3332-.9555 2.4189-2.1569 2.4189zm7.9748 0c-1.1825 0-2.1569-1.0857-2.1569-2.419 0-1.3332.9554-2.4189 2.1569-2.4189 1.2108 0 2.1757 1.0952 2.1568 2.419 0 1.3332-.946 2.4189-2.1568 2.4189Z" />
+                        </svg>
+                    </a>
+                    <a href="https://x.com/dududaatech" target="_blank">
+                        <svg role="img" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                            <title>X</title>
+                            <path
+                                d="M14.234 10.162 22.977 0h-2.072l-7.591 8.824L7.251 0H.258l9.168 13.343L.258 24H2.33l8.016-9.318L16.749 24h6.993zm-2.837 3.299-.929-1.329L3.076 1.56h3.182l5.965 8.532.929 1.329 7.754 11.09h-3.182z" />
+                        </svg>
+                    </a>
                 </div>
             </header>
-            <div class="navigationContainer">
-                <header class="appNavigation">
-                    <a href="#">
-                        <div class="appBrand">
-                            <img class="appLogo" src="assets/images/app_logo.png" />
-                            <h3 class="appName">HowMarket</h3>
-                        </div>
+        </div>
+        <section class="heroSection" id="home">
+            <div class="heroSection__content">
+                <div class="heroSection__textContent">
+                    <h1 class="heroSection__title">
+                        HowMarket Today?👋
+                    </h1>
+                    <p class="heroSection__subtitle">
+                        HowMarket is a free offline-first Point of Sale (PoS) software. It aims to simplify business
+                        accounting. Easily keep track of your sales,
+                        expenses and profits on the go! Works efficiently for big, medium and small businesses alike.
+                        With HowMarket, everyone sells like a pro.
+                    </p>
+                    <p>
+                        Available on Android, iOS and Desktop.
+                    </p>
+                </div>
+                <div class="sectionActions">
+                    <button class="btn outlineBtn rounded">
+                        Learn More
+                    </button>
+                    <a href="download.html">
+                        <button class="btn pryBtn rounded">
+                            Download Now
+                        </button>
                     </a>
-                    <a href="#features" class="navLink">Features</a>
-                    <a href="#partnership" class="navLink">Partnership</a>
-                    <a href="#contact" class="navLink">Contact</a>
+                </div>
+            </div>
+            <div class="heroSection__showcase">
+                <div class="heroSection__showcase__titleBox">
+                    <h1 class="heroSection__title">
+                        HowMarket Today?👋
+                    </h1>
+                </div>
+                <img src="assets/images/screenshot1.png" />
+            </div>
+            <div class="heroSection__text__mobileDisplay">
+                <p class="heroSection__subtitle">
+                    HowMarket is a free offline-first Point of Sale (PoS) software. It aims to simplify business
+                    accounting. Easily keep track of your sales,
+                    expenses and profits on the go! Works efficiently for big, medium and small businesses alike.
+                    With HowMarket, everyone sells like a pro.
+                </p>
+                <p class="actionText">
+                    Available on Android, iOS and Desktop.
+                </p>
+                <div class="sectionActions">
+                    <button class="btn outlineBtn rounded">
+                        Learn More
+                    </button>
+                    <a href="/download.html">
+                        <button class="btn pryBtn rounded">
+                            Download Now
+                        </button>
+                    </a>
+                </div>
+            </div>
+        </section>
+        <section class="appSection features darkSection" id="features">
+            <h3 class="sectionTitle">Features</h3>
+            <p class="sectionSubtitle">Most POS apps ignore small businesses and overcomplicate things for
+                them. <b>HowMarket is different</b>. It’s built to be simple enough for small sellers, yet powerful
+                enough for growing businesses.</p>
+            <div class="featureList">
+                <div class="featureItem">
+                    <div class="featureItemHeader">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none"
+                            stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"
+                            class="icon icon-tabler icons-tabler-outline icon-tabler-wifi-off">
+                            <path stroke="none" d="M0 0h24v24H0z" fill="none" />
+                            <path d="M12 18l.01 0" />
+                            <path d="M9.172 15.172a4 4 0 0 1 5.656 0" />
+                            <path
+                                d="M6.343 12.343a7.963 7.963 0 0 1 3.864 -2.14m4.163 .155a7.965 7.965 0 0 1 3.287 2" />
+                            <path d="M3.515 9.515a12 12 0 0 1 3.544 -2.455m3.101 -.92a12 12 0 0 1 10.325 3.374" />
+                            <path d="M3 3l18 18" />
+                        </svg>
+                        <h5>Offline-First</h5>
+                    </div>
+                    <p class="featureItemDesc">
+                        Works without internet. Don't wait for strong signals to complete transactions. HowMarket
+                        records first and sync later. This ensures no business activity gets lost on the timeline.
+                    </p>
+                </div>
+                <div class="featureItem">
+                    <div class="featureItemHeader">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none"
+                            stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"
+                            class="icon icon-tabler icons-tabler-outline icon-tabler-tip-jar">
+                            <path stroke="none" d="M0 0h24v24H0z" fill="none" />
+                            <path d="M14 10h-2.5a1.5 1.5 0 0 0 0 3h1a1.5 1.5 0 0 1 0 3h-2.5" />
+                            <path d="M12 9v1" />
+                            <path d="M12 16v1" />
+                            <path
+                                d="M17 4v1.882c0 .685 .387 1.312 1 1.618s1 .933 1 1.618v8.882a3 3 0 0 1 -3 3h-8a3 3 0 0 1 -3 -3v-8.882c0 -.685 .387 -1.312 1 -1.618s1 -.933 1 -1.618v-1.882" />
+                            <path d="M6 4h12l-12 0" />
+                        </svg>
+                        <h5>Daily Profit Tracking</h5>
+                    </div>
+                    <p class="featureItemDesc">
+                        Know what you make. Track daily sales and expenses automatically. HowMarket computes daily
+                        earnings in real-time, helping you analyze profits with ease.
+                    </p>
+                </div>
+                <div class="featureItem">
+                    <div class="featureItemHeader">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none"
+                            stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"
+                            class="icon icon-tabler icons-tabler-outline icon-tabler-file-invoice">
+                            <path stroke="none" d="M0 0h24v24H0z" fill="none" />
+                            <path d="M14 3v4a1 1 0 0 0 1 1h4" />
+                            <path d="M17 21h-10a2 2 0 0 1 -2 -2v-14a2 2 0 0 1 2 -2h7l5 5v11a2 2 0 0 1 -2 2" />
+                            <path d="M9 7l1 0" />
+                            <path d="M9 13l6 0" />
+                            <path d="M13 17l2 0" />
+                        </svg>
+                        <h5>Invoice Generation</h5>
+                    </div>
+                    <p class="featureItemDesc">
+                        Professional invoices in seconds. Create and share clean invoices for your customers instantly,
+                        straight from your phone.
+                    </p>
+                </div>
+                <div class="featureItem">
+                    <div class="featureItemHeader">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none"
+                            stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"
+                            class="icon icon-tabler icons-tabler-outline icon-tabler-devices">
+                            <path stroke="none" d="M0 0h24v24H0z" fill="none" />
+                            <path d="M13 9a1 1 0 0 1 1 -1h6a1 1 0 0 1 1 1v10a1 1 0 0 1 -1 1h-6a1 1 0 0 1 -1 -1v-10" />
+                            <path d="M18 8v-3a1 1 0 0 0 -1 -1h-13a1 1 0 0 0 -1 1v12a1 1 0 0 0 1 1h9" />
+                            <path d="M16 9h2" />
+                        </svg>
+                        <h5>Cross-platform</h5>
+                    </div>
+                    <p class="featureItemDesc">
+                        Available on all devices. While your team adds records across multiple storefronts, you can
+                        monitor all business activity from your phone, even 30 miles away.
+                    </p>
+                </div>
+                <div class="featureItem">
+                    <div class="featureItemHeader">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none"
+                            stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"
+                            class="icon icon-tabler icons-tabler-outline icon-tabler-building-warehouse">
+                            <path stroke="none" d="M0 0h24v24H0z" fill="none" />
+                            <path d="M3 21v-13l9 -4l9 4v13" />
+                            <path d="M13 13h4v8h-10v-6h6" />
+                            <path d="M13 21v-9a1 1 0 0 0 -1 -1h-2a1 1 0 0 0 -1 1v3" />
+                        </svg>
+                        <h5>Stock Management</h5>
+                    </div>
+                    <p class="featureItemDesc">
+                        Smart stock control. Always know what’s in stock, what’s running low, and what to reorder.
+                        Collect
+                        insights into product and business performance.
+                    </p>
+                </div>
+                <div class="featureItem">
+                    <div class="featureItemHeader">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none"
+                            stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"
+                            class="icon icon-tabler icons-tabler-outline icon-tabler-database-import">
+                            <path stroke="none" d="M0 0h24v24H0z" fill="none" />
+                            <path d="M4 6c0 1.657 3.582 3 8 3s8 -1.343 8 -3s-3.582 -3 -8 -3s-8 1.343 -8 3" />
+                            <path d="M4 6v6c0 1.657 3.582 3 8 3c.856 0 1.68 -.05 2.454 -.144m5.546 -2.856v-6" />
+                            <path d="M4 12v6c0 1.657 3.582 3 8 3c.171 0 .341 -.002 .51 -.006" />
+                            <path d="M19 22v-6" />
+                            <path d="M22 19l-3 -3l-3 3" />
+                        </svg>
+                        <h5>Local & Cloud Backup</h5>
+                    </div>
+                    <p class="featureItemDesc">
+                        Your data is safe. All your data is stored locally and backed up to the cloud so you never lose
+                        your records. Also access your business data across multiple devices.
+                    </p>
+                </div>
+            </div>
+        </section>
+        <section class="appSection" id="partnership">
+            <h3 class="sectionTitle">Become a Partner</h3>
+            <p class="sectionSubtitle">HowMarket is built in the spirit of open-source. Our goal is to make accounting
+                accessible to every business at every level. Your partnership helps us keep HowMarket free for everyone.
+            </p>
+            <div class="sectionActions">
+                <a href="https://flutterwave.com/donate/uuvz683mqaz5" target="_blank">
+                    <button class="btn outlineBtn rounded">
+                        Sponsor HowMarket
+                    </button>
+                </a>
+                <button class="btn pryBtn rounded">
+                    Partner With Us
+                </button>
+            </div>
+        </section>
+        <section class="appSection darkSection" id="contact">
+            <h3 class="sectionTitle">Contact Us</h3>
+            <p class="sectionSubtitle">If you have any question, comment or would like to be a partner, kindly drop us a
+                message and we'll respond quickly. Alternatively, you can reach out via Whatsapp, Discord or X. Thanks.
+            </p>
+            <div class="formContainer">
+                <p style="text-align: center; margin-bottom: 12px;">Please fill the form to contact us. <br /><span
+                        style="color: red;">All fields are required!</span></p>
+                <form id="contact-form">
+                    <input id="user-name" placeholder="Your Name" />
+                    <input id="user-contact" placeholder="Your email or phone number" />
+                    <select id="user-reason">
+                        <option selected>Reason</option>
+                        <option>Partnership</option>
+                        <option>Sponsorship</option>
+                        <option>Enquiry</option>
+                        <option>Comment</option>
+                        <option>Others</option>
+                    </select>
+                    <textarea id="user-message" placeholder="Message"></textarea>
+                    <div style="display: inline-flex; justify-content: right; width: 100%;">
+                        <button id="contact-submit-btn" type="submit" class="btn pryBtn rounded">
+                            Send Message
+                        </button>
+                    </div>
+                </form>
+            </div>
+        </section>
+        <footer>
+            <p>© 2026 HowMarket, Dududaa. All rights reserved.</p>
+        </footer>
+        <div id="drawer">
+            <div class="drawerContent">
+                <div class="appBrand">
+                    <img class="appLogo" src="assets/images/app_logo.png" />
+                    <h3 class="appName">HowMarket</h3>
+                </div>
+                <a href="#features" class="navLink">Features</a>
+                <a href="#partnership" class="navLink">Partnership</a>
+                <a href="#contact" class="navLink">Contact</a>
+                <div class="socialContainer">
+                    <p>Join Us</p>
                     <div class="socials">
                         <a href="https://github.com/dududaa/howmarket" target="_blank">
                             <svg role="img" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
@@ -91,282 +353,26 @@
                             </svg>
                         </a>
                     </div>
-                </header>
-            </div>
-            <section class="heroSection" id="home">
-                <div class="heroSection__content">
-                    <div class="heroSection__textContent">
-                        <h1 class="heroSection__title">
-                            HowMarket Today?👋
-                        </h1>
-                        <p class="heroSection__subtitle">
-                            HowMarket is a free offline-first Point of Sale (PoS) software. It aims to simplify business
-                            accounting. Easily keep track of your sales,
-                            expenses and profits on the go! Works efficiently for big, medium and small businesses alike.
-                            With HowMarket, everyone sells like a pro.
-                        </p>
-                        <p>
-                            Available on Android, iOS and Desktop.
-                        </p>
-                    </div>
-                    <div class="sectionActions">
-                        <button class="btn outlineBtn rounded">
-                            Learn More
-                        </button>
-                        <button class="btn pryBtn rounded">
-                            Download Now
-                        </button>
-                    </div>
-                </div>
-                <div class="heroSection__showcase">
-                    <div class="heroSection__showcase__titleBox">
-                        <h1 class="heroSection__title">
-                            HowMarket Today?👋
-                        </h1>
-                    </div>
-                    <img src="assets/images/screenshot1.png" />
-                </div>
-                <div class="heroSection__text__mobileDisplay">
-                    <p class="heroSection__subtitle">
-                        HowMarket is a free offline-first Point of Sale (PoS) software. It aims to simplify business
-                        accounting. Easily keep track of your sales,
-                        expenses and profits on the go! Works efficiently for big, medium and small businesses alike.
-                        With HowMarket, everyone sells like a pro.
-                    </p>
-                    <p class="actionText">
-                        Available on Android, iOS and Desktop.
-                    </p>
-                    <div class="sectionActions">
-                        <button class="btn outlineBtn rounded">
-                            Learn More
-                        </button>
-                        <button class="btn pryBtn rounded">
-                            Download Now
-                        </button>
-                    </div>
-                </div>
-            </section>
-            <section class="appSection features darkSection" id="features">
-                <h3 class="sectionTitle">Features</h3>
-                <p class="sectionSubtitle">Most POS apps ignore small businesses and overcomplicate things for
-                    them. <b>HowMarket is different</b>. It’s built to be simple enough for small sellers, yet powerful
-                    enough for growing businesses.</p>
-                <div class="featureList">
-                    <div class="featureItem">
-                        <div class="featureItemHeader">
-                            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none"
-                                stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"
-                                class="icon icon-tabler icons-tabler-outline icon-tabler-wifi-off">
-                                <path stroke="none" d="M0 0h24v24H0z" fill="none" />
-                                <path d="M12 18l.01 0" />
-                                <path d="M9.172 15.172a4 4 0 0 1 5.656 0" />
-                                <path
-                                    d="M6.343 12.343a7.963 7.963 0 0 1 3.864 -2.14m4.163 .155a7.965 7.965 0 0 1 3.287 2" />
-                                <path d="M3.515 9.515a12 12 0 0 1 3.544 -2.455m3.101 -.92a12 12 0 0 1 10.325 3.374" />
-                                <path d="M3 3l18 18" />
-                            </svg>
-                            <h5>Offline-First</h5>
-                        </div>
-                        <p class="featureItemDesc">
-                            Works without internet. Don't wait for strong signals to complete transactions. HowMarket
-                            records first and sync later. This ensures no business activity gets lost on the timeline.
-                        </p>
-                    </div>
-                    <div class="featureItem">
-                        <div class="featureItemHeader">
-                            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none"
-                                stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"
-                                class="icon icon-tabler icons-tabler-outline icon-tabler-tip-jar">
-                                <path stroke="none" d="M0 0h24v24H0z" fill="none" />
-                                <path d="M14 10h-2.5a1.5 1.5 0 0 0 0 3h1a1.5 1.5 0 0 1 0 3h-2.5" />
-                                <path d="M12 9v1" />
-                                <path d="M12 16v1" />
-                                <path
-                                    d="M17 4v1.882c0 .685 .387 1.312 1 1.618s1 .933 1 1.618v8.882a3 3 0 0 1 -3 3h-8a3 3 0 0 1 -3 -3v-8.882c0 -.685 .387 -1.312 1 -1.618s1 -.933 1 -1.618v-1.882" />
-                                <path d="M6 4h12l-12 0" />
-                            </svg>
-                            <h5>Daily Profit Tracking</h5>
-                        </div>
-                        <p class="featureItemDesc">
-                            Know what you make. Track daily sales and expenses automatically. HowMarket computes daily
-                            earnings in real-time, helping you analyze profits with ease.
-                        </p>
-                    </div>
-                    <div class="featureItem">
-                        <div class="featureItemHeader">
-                            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none"
-                                stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"
-                                class="icon icon-tabler icons-tabler-outline icon-tabler-file-invoice">
-                                <path stroke="none" d="M0 0h24v24H0z" fill="none" />
-                                <path d="M14 3v4a1 1 0 0 0 1 1h4" />
-                                <path d="M17 21h-10a2 2 0 0 1 -2 -2v-14a2 2 0 0 1 2 -2h7l5 5v11a2 2 0 0 1 -2 2" />
-                                <path d="M9 7l1 0" />
-                                <path d="M9 13l6 0" />
-                                <path d="M13 17l2 0" />
-                            </svg>
-                            <h5>Invoice Generation</h5>
-                        </div>
-                        <p class="featureItemDesc">
-                            Professional invoices in seconds. Create and share clean invoices for your customers instantly,
-                            straight from your phone.
-                        </p>
-                    </div>
-                    <div class="featureItem">
-                        <div class="featureItemHeader">
-                            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none"
-                                stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"
-                                class="icon icon-tabler icons-tabler-outline icon-tabler-devices">
-                                <path stroke="none" d="M0 0h24v24H0z" fill="none" />
-                                <path d="M13 9a1 1 0 0 1 1 -1h6a1 1 0 0 1 1 1v10a1 1 0 0 1 -1 1h-6a1 1 0 0 1 -1 -1v-10" />
-                                <path d="M18 8v-3a1 1 0 0 0 -1 -1h-13a1 1 0 0 0 -1 1v12a1 1 0 0 0 1 1h9" />
-                                <path d="M16 9h2" />
-                            </svg>
-                            <h5>Cross-platform</h5>
-                        </div>
-                        <p class="featureItemDesc">
-                            Available on all devices. While your team adds records across multiple storefronts, you can
-                            monitor all business activity from your phone, even 30 miles away.
-                        </p>
-                    </div>
-                    <div class="featureItem">
-                        <div class="featureItemHeader">
-                            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none"
-                                stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"
-                                class="icon icon-tabler icons-tabler-outline icon-tabler-building-warehouse">
-                                <path stroke="none" d="M0 0h24v24H0z" fill="none" />
-                                <path d="M3 21v-13l9 -4l9 4v13" />
-                                <path d="M13 13h4v8h-10v-6h6" />
-                                <path d="M13 21v-9a1 1 0 0 0 -1 -1h-2a1 1 0 0 0 -1 1v3" />
-                            </svg>
-                            <h5>Stock Management</h5>
-                        </div>
-                        <p class="featureItemDesc">
-                            Smart stock control. Always know what’s in stock, what’s running low, and what to reorder.
-                            Collect
-                            insights into product and business performance.
-                        </p>
-                    </div>
-                    <div class="featureItem">
-                        <div class="featureItemHeader">
-                            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none"
-                                stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"
-                                class="icon icon-tabler icons-tabler-outline icon-tabler-database-import">
-                                <path stroke="none" d="M0 0h24v24H0z" fill="none" />
-                                <path d="M4 6c0 1.657 3.582 3 8 3s8 -1.343 8 -3s-3.582 -3 -8 -3s-8 1.343 -8 3" />
-                                <path d="M4 6v6c0 1.657 3.582 3 8 3c.856 0 1.68 -.05 2.454 -.144m5.546 -2.856v-6" />
-                                <path d="M4 12v6c0 1.657 3.582 3 8 3c.171 0 .341 -.002 .51 -.006" />
-                                <path d="M19 22v-6" />
-                                <path d="M22 19l-3 -3l-3 3" />
-                            </svg>
-                            <h5>Local & Cloud Backup</h5>
-                        </div>
-                        <p class="featureItemDesc">
-                            Your data is safe. All your data is stored locally and backed up to the cloud so you never lose
-                            your records. Also access your business data across multiple devices.
-                        </p>
-                    </div>
-                </div>
-            </section>
-            <section class="appSection" id="partnership">
-                <h3 class="sectionTitle">Become a Partner</h3>
-                <p class="sectionSubtitle">HowMarket is built in the spirit of open-source. Our goal is to make accounting
-                    accessible to every business at every level. Your partnership helps us keep HowMarket free for everyone.
-                </p>
-                <div class="sectionActions">
-                    <a href="https://flutterwave.com/donate/uuvz683mqaz5" target="_blank">
-                        <button class="btn outlineBtn rounded">
-                            Sponsor HowMarket
-                        </button>
-                    </a>
-                    <button class="btn pryBtn rounded">
-                        Partner With Us
-                    </button>
-                </div>
-            </section>
-            <section class="appSection darkSection" id="contact">
-                <h3 class="sectionTitle">Contact Us</h3>
-                <p class="sectionSubtitle">If you have any question, comment or would like to be a partner, kindly drop us a
-                    message and we'll respond quickly. Alternatively, you can reach out via Whatsapp, Discord or X. Thanks.
-                </p>
-                <div class="formContainer">
-                    <p style="text-align: center; margin-bottom: 12px;">Please fill the form to contact us. <br /><span
-                            style="color: red;">All fields are required!</span></p>
-                    <form id="contact-form">
-                        <input id="user-name" placeholder="Your Name" />
-                        <input id="user-contact" placeholder="Your email or phone number" />
-                        <select id="user-reason">
-                            <option selected>Reason</option>
-                            <option>Partnership</option>
-                            <option>Sponsorship</option>
-                            <option>Enquiry</option>
-                            <option>Comment</option>
-                            <option>Others</option>
-                        </select>
-                        <textarea id="user-message" placeholder="Message"></textarea>
-                        <div style="display: inline-flex; justify-content: right; width: 100%;">
-                            <button id="contact-submit-btn" type="submit" class="btn pryBtn rounded">
-                                Send Message
-                            </button>
-                        </div>
-                    </form>
-                </div>
-            </section>
-            <footer>
-                <p>© 2026 HowMarket, Dududaa. All rights reserved.</p>
-            </footer>
-            <div id="drawer">
-                <div class="drawerContent">
-                    <div class="appBrand">
-                        <img class="appLogo" src="assets/images/app_logo.png" />
-                        <h3 class="appName">HowMarket</h3>
-                    </div>
-                    <a href="#features" class="navLink">Features</a>
-                    <a href="#partnership" class="navLink">Partnership</a>
-                    <a href="#contact" class="navLink">Contact</a>
-                    <div class="socialContainer">
-                        <p>Join Us</p>
-                        <div class="socials">
-                            <a href="https://github.com/dududaa/howmarket" target="_blank">
-                                <svg role="img" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
-                                    <title>GitHub</title>
-                                    <path
-                                        d="M12 .297c-6.63 0-12 5.373-12 12 0 5.303 3.438 9.8 8.205 11.385.6.113.82-.258.82-.577 0-.285-.01-1.04-.015-2.04-3.338.724-4.042-1.61-4.042-1.61C4.422 18.07 3.633 17.7 3.633 17.7c-1.087-.744.084-.729.084-.729 1.205.084 1.838 1.236 1.838 1.236 1.07 1.835 2.809 1.305 3.495.998.108-.776.417-1.305.76-1.605-2.665-.3-5.466-1.332-5.466-5.93 0-1.31.465-2.38 1.235-3.22-.135-.303-.54-1.523.105-3.176 0 0 1.005-.322 3.3 1.23.96-.267 1.98-.399 3-.405 1.02.006 2.04.138 3 .405 2.28-1.552 3.285-1.23 3.285-1.23.645 1.653.24 2.873.12 3.176.765.84 1.23 1.91 1.23 3.22 0 4.61-2.805 5.625-5.475 5.92.42.36.81 1.096.81 2.22 0 1.606-.015 2.896-.015 3.286 0 .315.21.69.825.57C20.565 22.092 24 17.592 24 12.297c0-6.627-5.373-12-12-12" />
-                                </svg>
-                            </a>
-                            <a href="https://discord.gg/qHkWvAPsDw" target="_blank">
-                                <svg role="img" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
-                                    <title>Discord</title>
-                                    <path
-                                        d="M20.317 4.3698a19.7913 19.7913 0 00-4.8851-1.5152.0741.0741 0 00-.0785.0371c-.211.3753-.4447.8648-.6083 1.2495-1.8447-.2762-3.68-.2762-5.4868 0-.1636-.3933-.4058-.8742-.6177-1.2495a.077.077 0 00-.0785-.037 19.7363 19.7363 0 00-4.8852 1.515.0699.0699 0 00-.0321.0277C.5334 9.0458-.319 13.5799.0992 18.0578a.0824.0824 0 00.0312.0561c2.0528 1.5076 4.0413 2.4228 5.9929 3.0294a.0777.0777 0 00.0842-.0276c.4616-.6304.8731-1.2952 1.226-1.9942a.076.076 0 00-.0416-.1057c-.6528-.2476-1.2743-.5495-1.8722-.8923a.077.077 0 01-.0076-.1277c.1258-.0943.2517-.1923.3718-.2914a.0743.0743 0 01.0776-.0105c3.9278 1.7933 8.18 1.7933 12.0614 0a.0739.0739 0 01.0785.0095c.1202.099.246.1981.3728.2924a.077.077 0 01-.0066.1276 12.2986 12.2986 0 01-1.873.8914.0766.0766 0 00-.0407.1067c.3604.698.7719 1.3628 1.225 1.9932a.076.076 0 00.0842.0286c1.961-.6067 3.9495-1.5219 6.0023-3.0294a.077.077 0 00.0313-.0552c.5004-5.177-.8382-9.6739-3.5485-13.6604a.061.061 0 00-.0312-.0286zM8.02 15.3312c-1.1825 0-2.1569-1.0857-2.1569-2.419 0-1.3332.9555-2.4189 2.157-2.4189 1.2108 0 2.1757 1.0952 2.1568 2.419 0 1.3332-.9555 2.4189-2.1569 2.4189zm7.9748 0c-1.1825 0-2.1569-1.0857-2.1569-2.419 0-1.3332.9554-2.4189 2.1569-2.4189 1.2108 0 2.1757 1.0952 2.1568 2.419 0 1.3332-.946 2.4189-2.1568 2.4189Z" />
-                                </svg>
-                            </a>
-                            <a href="https://x.com/dududaatech" target="_blank">
-                                <svg role="img" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
-                                    <title>X</title>
-                                    <path
-                                        d="M14.234 10.162 22.977 0h-2.072l-7.591 8.824L7.251 0H.258l9.168 13.343L.258 24H2.33l8.016-9.318L16.749 24h6.993zm-2.837 3.299-.929-1.329L3.076 1.56h3.182l5.965 8.532.929 1.329 7.754 11.09h-3.182z" />
-                                </svg>
-                            </a>
-                        </div>
-                    </div>
                 </div>
             </div>
-            <div id="toast">
-                <div class="toastContent">
-                    <div class="toastContent__inner">
-                        <p id="toastTextContent">Demo Message is very functional</p>
-                        <svg id="toastClose" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"
-                            fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
-                            stroke-linejoin="round" class="icon icon-tabler icons-tabler-outline icon-tabler-x">
-                            <path stroke="none" d="M0 0h24v24H0z" fill="none" />
-                            <path d="M18 6l-12 12" />
-                            <path d="M6 6l12 12" />
-                        </svg>
-                    </div>
+        </div>
+        <div id="toast">
+            <div class="toastContent">
+                <div class="toastContent__inner">
+                    <p id="toastTextContent">Demo Message is very functional</p>
+                    <svg id="toastClose" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"
+                        fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                        stroke-linejoin="round" class="icon icon-tabler icons-tabler-outline icon-tabler-x">
+                        <path stroke="none" d="M0 0h24v24H0z" fill="none" />
+                        <path d="M18 6l-12 12" />
+                        <path d="M6 6l12 12" />
+                    </svg>
                 </div>
             </div>
-        </main>
-        <script src="https://cdn.jsdelivr.net/npm/@supabase/supabase-js@2"></script>
-        <script src="assets/js/main.js"></script>
-    </body>
+        </div>
+    </main>
+    <script src="https://cdn.jsdelivr.net/npm/@supabase/supabase-js@2"></script>
+    <script src="assets/js/main.js"></script>
+</body>
+
 </html>

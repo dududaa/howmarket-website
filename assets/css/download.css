@@ -1,0 +1,47 @@
+.downloadPage {
+    width: 100%;
+    height: 100vh;
+}
+
+.downloadPage .downloadPage__content {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: var(--surface-color);
+}
+
+.downloadPage__content .downloadBox {
+    width: 60%;
+    padding: 3rem;
+    box-shadow: rgba(50, 50, 93, 0.25) 0px 6px 12px -2px, rgba(0, 0, 0, 0.3) 0px 3px 7px -3px;
+    background-color: white;
+}
+
+.downloadBox .headline,
+.downloadBox .subHeadline {
+    text-align: center;
+}
+
+.downloadBox .subHeadline {
+    color: #6d706f;
+}
+
+.downloadBox .launchDescription {
+    margin: 2rem 0;
+}
+
+.downloadBox .downloadBoxActions {
+    width: 70%;
+    margin: auto;
+    margin-top: 1rem;
+}
+
+.downloadBoxActions button {
+    width: 100%;
+}
+
+.downloadBoxActions button:first-child {
+    margin-bottom: 0.5rem;
+}
