@@ -1,3 +1,5 @@
+let LOADING = false
+
 // watch window scroll
 const headers = document.querySelectorAll(".headerMobile, .appNavigation")
 window.addEventListener('scroll', () => overlayHeaders())
@@ -51,12 +53,24 @@ const form = document.getElementById('contact-form')
 if (form) {
     form.addEventListener('submit', async (e) => {
         e.preventDefault()
+        if(LOADING) return
+        LOADING = true
+
+        const btn = document.getElementById('contact-submit-btn')
+        btn.disabled = true
+
+        const btnTextContent = btn.textContent
+        btn.textContent = 'loading...'
+
+        console.log(btnTextContent)
 
         try {
             const name = getInputValue('user-name')
             const contact = getInputValue('user-contact')
             const reason = getInputValue('user-reason')
             const message = getInputValue('user-message')
+
+            if (name.length < 1 || contact.length < 1 || reason == 'Reason' || message.length < 1) throw new Error('All fields are required!')
 
             const data = { name, contact, reason, message }
             const { error } = await client
@@ -71,6 +85,9 @@ if (form) {
             showToast('error', e.message)
         }
 
+        btn.textContent = btnTextContent
+        LOADING = false
+        btn.disabled = false
     })
 }
 
@@ -103,3 +120,9 @@ const showToast = (type, msg) => {
 
 const hoastCancel = document.getElementById('toastClose')
 hoastCancel.addEventListener('click', hideToast)
+
+// download asset
+const download = () => {
+    const url = "https://github.com/dududaa/howmarket/releases/download/v1.0.0-alpha/HowMarket-v1.0.0-alpha.apk"
+
+}
