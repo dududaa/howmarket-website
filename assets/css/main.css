@@ -193,3 +193,24 @@ footer p {
     text-align: center;
     color: white;
 }
+
+.privacyPolicyContent {
+    padding: 4rem var(--body-padding) 0 var(--body-padding);
+}
+
+.privacyPolicyContent h2 {
+    margin-top: 1.5rem;
+    margin-bottom: 0.5rem;
+}
+
+.privacyPolicyContent h3 {
+    margin-top: 1rem;
+}
+
+.privacyPolicyContent ul {
+    margin: 0;
+}
+
+.privacyPolicyContent #howmarket-privacy-policy-gdpr-compliant {
+    margin-bottom: 1rem;
+}
