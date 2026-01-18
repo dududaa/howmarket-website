@@ -33,15 +33,35 @@
 }
 
 .downloadBox .downloadBoxActions {
-    width: 70%;
+    width: 60%;
     margin: auto;
     margin-top: 1rem;
 }
 
 .downloadBoxActions button {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    column-gap: .3rem;
     width: 100%;
 }
 
-.downloadBoxActions button:first-child {
+.downloadBoxActions button:first-of-type {
     margin-bottom: 0.5rem;
+}
+
+.downloadBoxActions #countdownIndicator {
+    color: blue;
+    text-align: center;
+    opacity: 0;
+    transition: opacity .2s;
+}
+
+.downloadBoxActions #countdownIndicator.show {
+    opacity: 1;
+}
+
+#downloadError {
+    display: none;
+    text-align: center;
 }

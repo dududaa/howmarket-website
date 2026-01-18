@@ -120,9 +120,3 @@ const showToast = (type, msg) => {
 
 const hoastCancel = document.getElementById('toastClose')
 hoastCancel.addEventListener('click', hideToast)
-
-// download asset
-const download = () => {
-    const url = "https://github.com/dududaa/howmarket/releases/download/v1.0.0-alpha/HowMarket-v1.0.0-alpha.apk"
-
-}
