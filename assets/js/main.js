@@ -100,6 +100,7 @@ const getInputValue = (inputId) => {
 const hideToast = () => {
     const toast = document.getElementById("toast")
     toast.style.display = 'none'
+    toast.classList.remove('success', 'error')
 }
 
 const showToast = (type, msg) => {
