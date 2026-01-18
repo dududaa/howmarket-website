@@ -97,4 +97,14 @@
     #drawer .drawerContent {
         width: 70%;
     }
+
+    .downloadPage__content .downloadBox {
+        padding: 3rem 1.5rem;
+        width: 80%;
+    }
+
+    .downloadBox .downloadBoxActions {
+        width: 100%;
+        margin: 0;
+    }
 }

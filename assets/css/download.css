@@ -38,7 +38,7 @@
     margin-top: 1rem;
 }
 
-.downloadBoxActions button {
+.downloadBoxActions button, .downloadBoxActions button {
     display: inline-flex;
     align-items: center;
     justify-content: center;
@@ -53,12 +53,12 @@
 .downloadBoxActions #countdownIndicator {
     color: blue;
     text-align: center;
-    opacity: 0;
+    display: none;
     transition: opacity .2s;
 }
 
 .downloadBoxActions #countdownIndicator.show {
-    opacity: 1;
+    display: block;
 }
 
 #downloadError {
