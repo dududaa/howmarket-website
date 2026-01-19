@@ -1,7 +1,7 @@
 const download = () => {
     try {
         const link = document.createElement('a')
-        link.href = 'https://github.com/dududaa/howmarket/releases/download/v1.0.0-alpha/HowMarket-v1.0.0-alpha.apk'
+        link.href = 'https://files.catbox.moe/bprl98.apk'
     
         document.body.appendChild(link)
         link.click()

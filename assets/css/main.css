@@ -195,7 +195,7 @@ footer p {
 }
 
 .privacyPolicyContent {
-    padding: 4rem var(--body-padding) 0 var(--body-padding);
+    padding: 4rem 12rem 0 12rem;
 }
 
 .privacyPolicyContent h2 {

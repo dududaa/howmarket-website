@@ -107,4 +107,9 @@
         width: 100%;
         margin: 0;
     }
+
+    .privacyPolicyContent {
+        margin-left: var(--body-padding);
+        margin-right: var(--body-padding);
+    }
 }
